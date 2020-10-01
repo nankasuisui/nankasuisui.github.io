@@ -1,5 +1,10 @@
-.jac { width: 30vw; }
-hr { margin-bottom: 7%; margin-top: 7%; }
+.jac {
+    width: 30vw;
+}
+
+hr {
+    margin-bottom: 7%; margin-top: 7%;
+}
 
 .item {
     cursor: pointer;
