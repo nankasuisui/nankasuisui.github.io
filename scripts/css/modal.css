@@ -23,6 +23,18 @@
     transform: translate(-50%,-50%);
     background-color: #fdfdfd;
 }
+body p {
+    font-size: large;
+}
+@media screen and (orientation: portrait){
+    .modal-container {
+        max-height: 85%;
+        overflow: scroll;
+    }
+    body p {
+        font-size: larger;
+    }
+}
 
 .modal-contents {
     display: none;
@@ -36,6 +48,7 @@
 
 .modal-closer {
     position: absolute;
+    border: solid;
     top: 0.5rem;
     right: 1rem;
     cursor: pointer;
