@@ -28,8 +28,8 @@ body p {
 }
 @media screen and (orientation: portrait){
     .modal-container {
-        max-height: 85%;
-        overflow: scroll;
+        max-height: 88%;
+        overflow: visible;
     }
     body p {
         font-size: larger;
