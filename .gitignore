@@ -1,3 +1,10 @@
 *.zip
 .DS_Store
 _playground
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
