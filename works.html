@@ -1,4 +1,5 @@
 ﻿<!DOCTYPE html>
+<html lang="ja">
 
 <head>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -12,7 +13,7 @@
 	</script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link rel="icon" href="img/favicon.png">
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<TITLE>Works - なんかすいすい</TITLE>
 		<meta property="og:title" content="Works - なんかすいすい" />
 		<meta property="og:type" content="website" />
@@ -45,6 +46,32 @@
 		a {
 			cursor: pointer;
 		}
+		html, body {
+			width: 100%;
+			max-width: 100%;
+			overflow-x: hidden;
+			box-sizing: border-box;
+		}
+		*, *::before, *::after {
+			box-sizing: inherit;
+		}
+		.globalHeader {
+			width: 100%;
+			max-width: 100%;
+		}
+		.globalHeader .l-container {
+			max-width: 100%;
+		}
+		.works-main {
+			display: block;
+			width: 100%;
+			max-width: min(1280px, 100%);
+			margin-inline: auto;
+			padding-inline: clamp(0.75rem, 4vw, 1.5rem);
+			padding-block: 0.5rem 1.5rem;
+			text-align: left;
+			box-sizing: border-box;
+		}
 	</style>
 
   </head>
@@ -62,13 +89,14 @@
 		</div>
 	</div>
 
-	<header  style="margin-left: 3%;">
+	<main class="works-main">
+	<header>
 		<h1>制作作品</h1>
 		<h3>*クリックで各作品詳細/購入リンクを表示</h3>
 	</header>
 
 
-	<section style="margin: 0 3%;" class="flex-container">
+	<section class="flex-container">
 		<div class="item" id="fft">
 			<h3 class="album-title"><u>Far from there(2025)</u></h3>
 			<img class="jacket" src="img/fft_1k.jpg">
@@ -138,6 +166,7 @@
 			<img class="jacket" src="img/shiki_1k.jpg">
 		</div>
 	</section>
+	</main>
 
 	<div class="modal-area">
 		<div class="modal-layer"></div>
